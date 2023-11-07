@@ -5,6 +5,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #363247;
 }
 
 h1 {
@@ -57,6 +64,7 @@ li {
 
 #copyright {
   font-size: 16px;
+  font-style: bold;
 }
 
 .related-author {
@@ -69,5 +77,71 @@ li {
 }
 
 body {
-  background-color: bisque;
+  background-color: #ffd3b6;
+}
+
+.main-header {
+  background-color: #fdffab;
+}
+
+aside {
+  background-color: #e7ec95;
+  border: 5px solid #a8e6cf;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+article p:last-child {
+  color: rebeccapurple;
+}
+
+/* Styling Links */
+
+/* higher priority-pseudo */
+a:link {
+  color: #070f4e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #363247;
+}
+
+a:hover {
+  color: #363247;
+  text-decoration: underline wavy rebeccapurple;
+}
+
+a:active {
+  background-color: #ffd3b6;
+  font-style: italic;
+}
+
+/* LVHA */
+
+/* Resolving Conflicts */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
 }
