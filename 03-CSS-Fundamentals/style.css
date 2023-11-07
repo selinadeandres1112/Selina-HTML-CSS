@@ -1,11 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* * {
+  border-top: 10px solid saddlebrown;
+} */
+
+body {
+  background-color: #ffd3b6;
+  color: 444;
   font-family: sans-serif;
-  color: #444;
+  border-top: 10px solid saddlebrown;
+}
+nav {
+  font-size: 18px;
 }
 
 h1,
@@ -74,10 +78,6 @@ li {
 
 .bullet {
   list-style: none;
-}
-
-body {
-  background-color: #ffd3b6;
 }
 
 .main-header {
