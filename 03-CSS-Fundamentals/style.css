@@ -1,5 +1,4 @@
 * {
-  /* border-top: 10px solid saddlebrown; */
   margin: 0;
   padding: 0;
 }
@@ -13,18 +12,13 @@ body {
 
 .container {
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .main-header {
   background-color: #fdffab;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 nav {
   font-size: 18px;
@@ -97,14 +91,6 @@ li:last-child {
   margin-bottom: 0;
 }
 
-/* footer p {
-  font-size: 16px;
-} */
-
-/*article header p {
-  font-style: italic;
-}*/
-
 #author {
   font-style: italic;
   font-size: 18px;
@@ -133,13 +119,13 @@ li:last-child {
 }
 
 li:nth-child(even) {
-  /* color: red; */
 }
 
 article p:last-child {
   color: rebeccapurple;
 }
 
+/* Note: Udemy  */
 /* Styling Links */
 
 /* higher priority-pseudo */
@@ -164,6 +150,15 @@ a:active {
 
 /* LVHA */
 
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
 /* Resolving Conflicts */
 #copyright {
   color: red;
