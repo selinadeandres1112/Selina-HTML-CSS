@@ -11,6 +11,12 @@ body {
   border-top: 10px solid saddlebrown;
 }
 
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-header {
   background-color: #fdffab;
   /* padding: 20px;
