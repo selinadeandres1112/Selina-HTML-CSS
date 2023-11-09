@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,9 +41,11 @@ aside {
   background-color: #e7ec95;
   border-top: 5px solid #a8e6cf;
   border-bottom: 5px solid #a8e6cf;
-  padding: 50px 0;
+  padding: 50px 40px;
   width: 300px;
-  float:left;
+  float:right;
+  box-sizing: border-box;
+  
 }
 
 h1,
@@ -77,6 +80,7 @@ h4 {
   font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
