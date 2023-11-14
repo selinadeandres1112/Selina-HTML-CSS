@@ -28,11 +28,9 @@
       .el--5 {
         background-color: palevioletred;
         align-self: stretch;
-        order: 1;
       }
       .el--6 {
         background-color: steelblue;
-        order: -1;
       }
       .el--7 {
         background-color: burlywood;
@@ -64,20 +62,40 @@
 
         flex: 0 0 200px;
       }
+
+      .container--2 {
+        display: none;
+      }
+
+      .container--1 {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 500px;
+
+        gap: 30px;
+        column-gap: 30px;
+        row-gap: 60px;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container--1">
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <!-- <div class="el el--6">language</div> -->
-      <!-- TESTING NOTE -->
-      <!-- <div class="el el--7">to</div>
-      <div class="el el--8">learn</div> -->
+      <div class="el el--6">language</div>
+      <!--TESTING NOTE -->
+      <div class="el el--7">to</div>
+      <div class="el el--8">learn</div>
     </div>
   </body>
 </html>
