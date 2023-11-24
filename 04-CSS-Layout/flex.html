@@ -14,11 +14,16 @@
 
       .el--2 {
         background-color: pink;
+        grid-column: 1;
+        grid-row: 2;
+        grid-column: 1 / -1;
       }
 
       .el--3 {
         background-color: rgb(69, 218, 32);
         height: 150px;
+        align-self: end;
+        justify-self: end;
       }
 
       .el--4 {
@@ -37,6 +42,7 @@
       }
       .el--8 {
         background-color: crimson;
+        grid-row: 1 / 2;
       }
 
       .container {
@@ -64,7 +70,6 @@
       }
 
       .container--2 {
-        display: none;
       }
 
       .container--1 {
@@ -75,12 +80,27 @@
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
         height: 500px;
 
         gap: 30px;
         column-gap: 30px;
         row-gap: 60px;
+        display: none;
+        gap: 50px;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container  distribute empty space*/
+
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: space-between;
+        justify-items: center;
+
+        /* Aligning items INSIDE cells: moving items around inside cells */
+        align-items: end;
+        justify-items: end;
       }
     </style>
   </head>
