@@ -65,11 +65,15 @@ img {
 }
 
 .feature-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 50px;
 }
 
 .feature-title {
   margin-bottom: 16px;
   font-size: 20px;
+  margin-bottom: 16px;
 }
 
 .grid-3-cols {
@@ -104,4 +108,5 @@ img {
 .btn--big {
   font-size: 18px;
   padding: 16px 32px;
+  box-shadow: 0 20px 10px 0 rgb(0, 0, 0, 0.1);
 }
