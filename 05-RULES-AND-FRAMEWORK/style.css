@@ -1,0 +1,107 @@
+h2 {
+  margin-bottom: 48px;
+}
+
+•grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(s, 1fr);
+  column-gap: 80px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+* {
+  margin: -0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.header-text {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+}
+
+.feature-icon {
+}
+
+.feature-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 500;
+  padding: 16px 32px;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--small {
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
