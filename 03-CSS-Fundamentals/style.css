@@ -1,83 +1,91 @@
 * {
+  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
-  background-color: #ffd3b6;
-  color: 444;
+  color: #444;
   font-family: sans-serif;
-  border-top: 10px solid saddlebrown;
+
+  border-top: 10px solid #1098ad;
   position: relative;
 }
 
 .container {
   width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin: 0 auto;
 }
 
 .main-header {
-  background-color: #fdffab;
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  /* height: 80px; */
 }
+
 nav {
   font-size: 18px;
-  text-align: center;
-  border: solid #ffd3b6;
-  padding-bottom: 5px;
-
+  /* text-align: center; */
 }
 
 article {
   margin-bottom: 60px;
 }
 
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
 aside {
-  background-color: #e7ec95;
-  border-top: 5px solid #a8e6cf;
-  border-bottom: 5px solid #a8e6cf;
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   padding: 50px 0;
   width: 500px;
 }
 
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
-  color: #363247;
+  color: #1098ad;
 }
 
 h1 {
   font-size: 26px;
-  font-family: sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  padding-bottom: 10px;
 }
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
   margin-bottom: 30px;
-  position:relative;
 }
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
   font-size: 20px;
-  font-family: sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 p {
   font-size: 22px;
-  font-family: sans-serif;
   line-height: 1.5;
   margin-bottom: 15px;
 }
@@ -90,13 +98,21 @@ ol {
 
 li {
   font-size: 20px;
-  font-family: sans-serif;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
   margin-bottom: 0;
 }
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
 
 #author {
   font-style: italic;
@@ -105,7 +121,6 @@ li:last-child {
 
 #copyright {
   font-size: 16px;
-  font-style: bold;
 }
 
 .related-author {
@@ -113,9 +128,21 @@ li:last-child {
   font-weight: bold;
 }
 
-.bullet {
+/* ul {
+  list-style: none;
+} */
+
+.related {
   list-style: none;
 }
+
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
@@ -126,49 +153,99 @@ li:last-child {
 }
 
 li:nth-child(even) {
+  /* color: red; */
 }
 
-article p:last-child {
-  color: rebeccapurple;
+/* Misconception: this won't work! */
+article p:first-child {
+  color: red;
 }
 
-/* Note: Udemy  */
-/* Styling Links */
-
-/* higher priority-pseudo */
+/* Styling links */
 a:link {
-  color: #070f4e;
+  color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  color: #363247;
+  /* color: #777; */
+  color: #1098ad;
 }
 
 a:hover {
-  color: #363247;
-  text-decoration: underline wavy rebeccapurple;
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
 }
 
 a:active {
-  background-color: #ffd3b6;
+  background-color: black;
   font-style: italic;
 }
-
 /* LVHA */
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
 nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
-  
 }
 
 nav a:link:last-child {
   margin-right: 0;
 }
-/* Resolving Conflicts */
-#copyright {
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* Resolving conflicts */
+/* #copyright {
   color: red;
 }
 
@@ -182,40 +259,9 @@ nav a:link:last-child {
 
 footer p {
   color: green !important;
-}
+} */
 
-.post-header {
-  margin-bottom: 40px;
-}
-
-.post-img {
-  width: 100%;
-  height: auto;
-}
-
-button {
-  font-size: 22px;
-  padding: 20px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-}
-
-/* ajecent siblngs */
-h3 + p::first-line { a
-  color: red;
-}
-
-h2::after {
-  content:"TOP";
-  background-color:#a8e6cf;
-  font-size: 16px;
-  font-weight: bold;
-  display: inline-block;
-  padding: 5px 10px;
-  position: absolute ;
-  top: -15px;
-  right: -55px;
-  color: #363247;
-}
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
